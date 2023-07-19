@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Raleway:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Barra de navegacion */
+.navbar {
+    background-color: black;
+    background: #000000;
+    box-shadow: 5px 5px 8px #9c9898,
+        -5px -5px 8px #b1aeae;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: yellowgreen;
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: black;
+}
+
+.dropdown-item{
+    color: white;
+}
+
+.nav-item{
+    padding: 40px;
+}
+/* Fin barra de navegacion */
+
+/* Inicio del video */
+
+.videoHeader{
+    width: 100%;
+    background-color: black;
+}
+
+.videoHeader video{
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+/* Fin modificaciones del video */
+
+/* inicio del main */
+
+.card{
+    background-color: black;
+    border-radius: 0%;
+}
+
+.card h1{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.card h1 span{
+    color: yellowgreen;
+}
+
+.card-body{
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.card-body p{
+    color: white;
+    width: 40%;
+    padding-right: 200px;
+    margin-top: 30px;
+}
+
+/* parallax */
+
+.sectionProyectos{
+    background-color: black;
+
+}
+
+.sectionProyectos .card{
+    opacity: 30%;
+}
+
+
+.imgProyectos{
+    width: 100%;
+    margin: 0 auto;
+    /* height: 85vh; */
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid black;
+}
+
+.imgProyectos img{
+    width: 0px;
+    height: 100%;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 70%;
+    transition: .5s ease;
+}
+
+.imgProyectos img:hover{
+    width: 30%;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+   
+    .navbar-brand img{
+        width: 130px;
+        height: 130px;
+    }
+
+    .nav-item{
+        padding: 0;
+    }
+
+    .card-body p{
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        margin: 50px auto;
+    }
+
+    .imgProyectos .img1{
+        flex-grow: 2;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .nav-item{
+        padding: 0;
+    }
+
+    .card-body p{
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        margin: 50px auto;
+    }
+}
+
+@media screen and (max-width: 1199px){
+    .card-body p{
+        width: 60%;
+        padding: 10px;
+        margin: 40px 20px;
+    }
+}
