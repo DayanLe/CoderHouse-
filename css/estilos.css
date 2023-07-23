@@ -56,54 +56,61 @@ body{
 
 /* inicio del main */
 
-.card{
-    background-color: black;
-    border-radius: 0%;
+main{
+    width: 100%;
+    margin-right: auto;
+  margin-left: auto;
 }
 
-.card h1{
+.cardPrimerTexto{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 0;
+}
+
+.cardPrimerTexto h1{
     text-align: center;
-    color: white;
+    color: black;
     font-weight: bold;
+    background-color: white;
+    border: 0;
 }
 
-.card h1 span{
+.cardPrimerTexto h1 span{
     color: yellowgreen;
 }
 
-.card-body{
+.cardPrimerTexto .card-body{
     width: 100%;
     justify-content: flex-end;
 }
 
-.card-body p{
-    color: white;
+.cardPrimerTexto .card-body p{
+    color: black;
     width: 40%;
     padding-right: 200px;
     margin-top: 30px;
 }
 
-/* parallax */
+/* carrusel */
 
 .sectionProyectos{
-    background-color: black;
-
+    margin: 30px 0;
+    width: 100%;
+    background-color: #000;
+    font-size: 5rem;
 }
-
-.sectionProyectos .card{
-    opacity: 30%;
-}
-
 
 .imgProyectos{
-    width: 100%;
-    margin: 0 auto;
-    /* height: 85vh; */
+    width: 90%;
+    margin: 10px auto;
+    height: 50vh;
     background: #000;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 0.5px solid black;
+    margin-bottom: 30px;
 }
 
 .imgProyectos img{
@@ -122,6 +129,116 @@ body{
 }
 
 
+/* garantia garantizada */
+
+.garantia, .servicios, .productos{
+    height: 50vh;
+    background-color: #000;
+}
+
+
+.garantia img, .servicios img, .productos img{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.textoGarantia, .textoServicios, .textoProductos{ 
+    margin: 8rem auto;
+    padding: 30px;
+}
+
+.textoGarantia h2, .servicios h2, .productos h2{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.textoGarantia p, .servicios p, .productos p{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Tabla de precios */
+
+
+.containerPrecios{
+    margin: 30px;
+}
+
+.containerPrecios h3{
+    font-size: 3rem;
+    /* font-weight: bold; */
+}
+
+
+.cardPrecios {
+    width: 20%;
+    height: 30vh;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    user-select: none;
+    color: black;
+    margin: 30px;
+  }
+  
+  .cardPrecios:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+  }
+  
+  .cardPrecios:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+  }
+
+  .cardPrecios .texto{
+    width: 80%;
+    margin: 10px auto;
+    padding: 20px;
+  }
+
+  .cardPrecios .texto span{
+    font-size: 3rem;
+    font-weight: bold;
+    color: blue;
+  }
+
+  /* BOTON */
+
+  button {
+    background-color: white;
+    color: black;
+    border-radius: 10em;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 1em 2em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid black;
+    box-shadow: 0 0 0 0 black;
+  }
+  
+  button:hover {
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 black;
+  };
+  
+  button:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 black;
+  };
+
+
+
+
 
 
 
@@ -137,15 +254,29 @@ body{
         padding: 0;
     }
 
+
     .card-body p{
         width: 100%;
-        text-align: center;
-        padding: 10px;
-        margin: 50px auto;
+        padding-right: 0px;
+        margin-top: 30px;
+    }
+
+    .sectionProyectos .card3 {
+        display: none;
     }
 
     .imgProyectos .img1{
         flex-grow: 2;
+    }
+
+    .cardPrecios{
+        width: 100%;
+    }
+
+    .textoGarantia, .textoServicios, .textoProductos{ 
+        font-size: 1rem;
+        margin: 1rem auto;
+        padding: 10px;
     }
 }
 
