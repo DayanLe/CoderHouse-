@@ -12,6 +12,10 @@ body{
 
 
 /* Barra de navegacion */
+
+header{
+    background-color: #000000;
+}
 .navbar {
     background-color: black;
     background: #000000;
@@ -54,48 +58,60 @@ body{
 
 /* Fin modificaciones del video */
 
-/* inicio del main */
+/* inicio del main con le pirmer texto*/
 
-main{
-    width: 100%;
-    margin-right: auto;
-  margin-left: auto;
-}
 
-.cardPrimerTexto{
-    margin-top: 50px;
-    margin-bottom: 50px;
+.cardHeader{
     border: 0;
 }
 
-.cardPrimerTexto h1{
+.primerSection h1{
     text-align: center;
-    color: black;
-    font-weight: bold;
-    background-color: white;
-    border: 0;
+    margin: 50px 20px;
 }
 
-.cardPrimerTexto h1 span{
+.primerSection h1 span{
     color: yellowgreen;
 }
 
-.cardPrimerTexto .card-body{
-    width: 100%;
-    justify-content: flex-end;
+.parrafoHeader{
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 0 20px;
 }
 
-.cardPrimerTexto .card-body p{
-    color: black;
-    width: 40%;
-    padding-right: 200px;
-    margin-top: 30px;
+
+/* Seccion Garantia, Servicios, Productos */
+
+.segundoSection{
+    background-color: #000000;
+    color: white;
+}
+
+.heading{
+    text-align: center;
+}
+
+.segundoSection p {
+    font-size: 1rem;
+}
+
+.segundoSection img{
+    flex-direction: column;
+}
+
+/* Seccion Proyectos */
+
+.sectionTres{
+    background-color: #000000;
+    text-align: center;
 }
 
 /* carrusel */
 
+
+
 .sectionProyectos{
-    margin: 30px 0;
     width: 100%;
     background-color: #000;
     font-size: 5rem;
@@ -128,55 +144,9 @@ main{
     filter: contrast(120%);
 }
 
-
-/* garantia garantizada */
-
-.garantia, .servicios, .productos{
-    height: 50vh;
-    background-color: #000;
-}
-
-
-.garantia img, .servicios img, .productos img{
-    width: 100%;
-    height: 50vh;
-    object-fit: cover;
-}
-
-.textoGarantia, .textoServicios, .textoProductos{ 
-    margin: 8rem auto;
-    padding: 30px;
-}
-
-.textoGarantia h2, .servicios h2, .productos h2{
-    text-align: center;
-    font-size: 3rem;
-    margin-bottom: 3rem;
-}
-
-.textoGarantia p, .servicios p, .productos p{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
 /* Tabla de precios */
 
-
-.containerPrecios{
-    margin: 30px;
-}
-
-.containerPrecios h3{
-    font-size: 3rem;
-    /* font-weight: bold; */
-}
-
-
 .cardPrecios {
-    width: 20%;
-    height: 30vh;
     background: rgba(217, 217, 217, 0.58);
     border: 1px solid white;
     box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
@@ -187,7 +157,7 @@ main{
     transition: all 0.5s;
     user-select: none;
     color: black;
-    margin: 30px;
+    margin: 5px;
   }
   
   .cardPrecios:hover {
@@ -199,21 +169,9 @@ main{
     transform: scale(0.95) rotateZ(1.7deg);
   }
 
-  .cardPrecios .texto{
-    width: 80%;
-    margin: 10px auto;
-    padding: 20px;
-  }
-
-  .cardPrecios .texto span{
-    font-size: 3rem;
-    font-weight: bold;
-    color: blue;
-  }
-
   /* BOTON */
 
-  button {
+button {
     background-color: white;
     color: black;
     border-radius: 10em;
@@ -224,79 +182,73 @@ main{
     transition: all 0.3s ease-in-out;
     border: 1px solid black;
     box-shadow: 0 0 0 0 black;
-  }
+}
   
-  button:hover {
+button:hover {
     transform: translateY(-4px) translateX(-2px);
     box-shadow: 2px 5px 0 0 black;
   };
   
-  button:active {
+button:active {
     transform: translateY(2px) translateX(1px);
     box-shadow: 0 0 0 0 black;
-  };
+};
+
+   /* Fin Tabla de precios */
+
+/* Footer */
+
+footer{
+    background-color: #000;
+    color: white;
+}
+footer .contenedorFooter{
+    background-color: #000000;
+    padding: 30px;
+}
+
+footer .contenedorFooter li{
+    list-style: none;
+}
+
+.redes i{
+    padding-right: 20px;
+}
+
+.primerColFooter{
+    align-items: flex-start;
+}
+
+.primerColFooter .redes{
+    text-align: inherit;
+}
+
+.logoFooter{
+    text-align: center;
+}
+
+.divParrafoFooter{
+    text-align: end;
+}
+
+.divParrafoFooter .parrafoFooter{
+    margin-bottom: 0%;
+}
+
+/* pagina contacto */
+
+.contenedorForm{
+    background-color: #000000;
+}
+
+.form-control, textarea{
+    background-color: #cecece3c;
+    color: white;
+}
 
 
 
 
 
-
-
-
-@media screen and (max-width: 767px) {
    
-    .navbar-brand img{
-        width: 130px;
-        height: 130px;
-    }
-
-    .nav-item{
-        padding: 0;
-    }
-
-
-    .card-body p{
-        width: 100%;
-        padding-right: 0px;
-        margin-top: 30px;
-    }
-
-    .sectionProyectos .card3 {
-        display: none;
-    }
-
-    .imgProyectos .img1{
-        flex-grow: 2;
-    }
-
-    .cardPrecios{
-        width: 100%;
-    }
-
-    .textoGarantia, .textoServicios, .textoProductos{ 
-        font-size: 1rem;
-        margin: 1rem auto;
-        padding: 10px;
-    }
-}
-
-@media screen and (max-width: 991px){
-    .nav-item{
-        padding: 0;
-    }
-
-    .card-body p{
-        width: 100%;
-        text-align: center;
-        padding: 10px;
-        margin: 50px auto;
-    }
-}
-
-@media screen and (max-width: 1199px){
-    .card-body p{
-        width: 60%;
-        padding: 10px;
-        margin: 40px 20px;
-    }
-}
+ 

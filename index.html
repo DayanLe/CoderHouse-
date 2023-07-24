@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1a1e37f7dd.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/estilos.css">
@@ -12,10 +13,10 @@
 
 <body>
     <!-- Este es el header con barra de navegacion implementado con bootstrap -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
             <div class="container">
-                <a class="navbar-brand" href="index.htmls">
+                <a class="navbar-brand" href="index.html">
                     <img src="./assets/img/logoRound.png" alt="Logo" width="80" height="80">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -57,75 +58,84 @@
     <!-- Fin header y barra de navegacion -->
 
     <!-- Inicio del main -->
-    <main class="">
-
-        <section class="cardPrimerTexto">
-            <h1 class="card-header">Servicios de Aire Acondicionado para un <span>ambiente confortable</span></h1>
-            <div class="card-body d-flex">
-                <p class="card-text">Trabajamos incansable e intencionalmente para ganarnos su confianza al hacer que
-                    cada experiencia con Nilson Lenis | Aires Acondicionados sea excepcional. Desde trabajos de servicio
-                    de rutina hasta equipos industriales complejos en todo el valle, nuestro objetivo es lograr el éxito
-                    juntos. Tiene una visión para su próximo gran proyecto: trabaje con Nilson Lenis | Aires
-                    Acondicionados para hacerlo realidad.</p>
+    <main class="container-fluid">
+        <section class="row primerSection">
+            <div class="col-12 cardHeader">
+                <h1 class="card-header-h1 fw-bold">Servicios de Aire Acondicionado para un <span>ambiente
+                        confortable</span>
+                </h1>
             </div>
-        </section>
-
-        <div class="garantia row d-flex w-100">
-            <div class="col-6">
-                <img src="./assets/img/188ac27c-a343-4029-beb0-aaf0418bea73.jpeg" alt="">
-            </div>
-            <div class="col-6 textoGarantia text-white">
-                <h2>Garantía Garantizada</h2>
-                <p>Estamos comprometidos en brindar la mejor calidad en nuestros servicios. Es por eso que ofrecemos una
-                    'Garantía Garantizada' que respalda la satisfacción de nuestros clientes. Nuestros expertos técnicos
-                    altamente capacitados se asegurarán de que tu sistema de aire acondicionado funcione de manera
-                    óptima y eficiente. Si por alguna razón no estás completamente satisfecho con nuestro trabajo,
-                    estaremos encantados de corregir cualquier problema sin costo adicional. Tu comodidad y tranquilidad
-                    son nuestra máxima prioridad, y nuestra garantía te brinda la confianza de que siempre recibirás un
-                    servicio excepcional y de calidad.</p>
-            </div>
-        </div>
-
-        <div class="servicios row d-flex w-100">
-            <div class="col-6 textoServicios text-white">
-                <h2>Servicios</h2>
-                <p>Estamos comprometidos en brindar la mejor calidad en nuestros servicios. Es por eso que ofrecemos una
-                    'Garantía Garantizada' que respalda la satisfacción de nuestros clientes. Nuestros expertos técnicos
-                    altamente capacitados se asegurarán de que tu sistema de aire acondicionado funcione de manera
-                    óptima y eficiente. Si por alguna razón no estás completamente satisfecho con nuestro trabajo,
-                    estaremos encantados de corregir cualquier problema sin costo adicional. Tu comodidad y tranquilidad
-                    son nuestra máxima prioridad, y nuestra garantía te brinda la confianza de que siempre recibirás un
-                    servicio excepcional y de calidad.</p>
-            </div>
-            <div class="col-6">
-                <img src="./assets/img/188ac27c-a343-4029-beb0-aaf0418bea73.jpeg" alt="">
-            </div>
-        </div>
-
-        <div class="productos row d-flex w-100">
-            <div class="col-6">
-                <img src="./assets/img/188ac27c-a343-4029-beb0-aaf0418bea73.jpeg" alt="">
-            </div>
-            <div class="col-6 textoProductos text-white">
-                <h2>Productos</h2>
-                <p>Estamos comprometidos en brindar la mejor calidad en nuestros servicios. Es por eso que ofrecemos una
-                    'Garantía Garantizada' que respalda la satisfacción de nuestros clientes. Nuestros expertos técnicos
-                    altamente capacitados se asegurarán de que tu sistema de aire acondicionado funcione de manera
-                    óptima y eficiente. Si por alguna razón no estás completamente satisfecho con nuestro trabajo,
-                    estaremos encantados de corregir cualquier problema sin costo adicional. Tu comodidad y tranquilidad
-                    son nuestra máxima prioridad, y nuestra garantía te brinda la confianza de que siempre recibirás un
-                    servicio excepcional y de calidad.
+            <div class="parrafoHeader">
+                <p>
+                    Trabajamos incansable e intencionalmente para ganarnos su confianza al hacer que cada experiencia
+                    con Nilson Lenis | Aires Acondicionados sea excepcional. Desde trabajos de servicio de rutina hasta
+                    equipos industriales complejos en todo el valle, nuestro objetivo es lograr el éxito juntos. Tiene
+                    una visión para su próximo gran proyecto: trabaje con Nilson Lenis | Aires Acondicionados para
+                    hacerlo realidad.
                 </p>
             </div>
-        </div>
 
-         <!-- Proyectos -->
+        </section>
 
-         <div class="sectionProyectos row w-100 d-flex justify-content-center align-items-center text-white">
-            <p class="col-4">PROYECTOS</p>
-            <p class="col-4">PROYECTOS</p>
-            <p class="col-4">PROYECTOS</p>
-        </div>
+        <!-- Seccion Garantia, Servicios, Productos  -->
+        <section class="row segundoSection">
+            <div class="col-md-6 mb-3 mt-5 ps-3">
+                <h2 class="heading fw-bold mb-3 d-flex justify-content-center">Garantía garantizada</h2>
+                <p class="parrafoSegundoSection">Nuestra prioridad es brindarte la mejor calidad y tranquilidad con
+                    nuestra 'Garantía Garantizada'. Contamos con expertos técnicos altamente capacitados para optimizar
+                    tu sistema de aire acondicionado. Si no estás satisfecho, corregiremos cualquier problema sin costo
+                    adicional. Siempre recibirás un servicio excepcional y de calidad.</p>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center">
+                <img src="./assets/img/188ac27c-a343-4029-beb0-aaf0418bea73.jpeg" alt="Empleado trabajando" width="500"
+                    height="500">
+            </div>
+            </div>
+
+
+
+            <section class="row segundoSection2">
+                <div class="col-md-6 order-md-2 mb-3 mt-5 ps-3">
+                    <h2 class="heading fw-bold mb-3">Servicios</h2>
+                    <p class="lead">Ofrecemos una amplia variedad de servicios:
+                    <ul>
+                        <li>Venta de Aires Acondicionados</li>
+                        <li>Mantenimiento de equipos</li>
+                        <li>Instalaciones</li>
+                        <li>Desmontaje</li>
+                        <li>Revisión periodica</li>
+                        <li>Entre otros</li>
+                    </ul>
+                    </p>
+                </div>
+                <div class="col-md-6 order-md-1 d-flex justify-content-center">
+                    <img src="./assets/img/188ac27c-a343-4029-beb0-aaf0418bea73.jpeg" alt="Empleado trabajando"
+                        width="500" height="500">
+                </div>
+            </section>
+
+            <section class="row segundoSection3 mt-5 mb-5 ps-3">
+                <div class="col-md-6 order-md-1 mb-3">
+                    <h2 class="heading fw-bold mb-3">Productos</h2>
+                    <p class="parrafoSegundoSection">Vendemos aires acondicionados para todas las necesidades, desde
+                        industriales hasta residenciales, partes, accesorios, etc.</p>
+                </div>
+                <div class="col-md-6 order-md-2 d-flex justify-content-center">
+                    <img src="./assets/img/188ac27c-a343-4029-beb0-aaf0418bea73.jpeg" alt="Empleado trabajando"
+                        width="500" height="500">
+                </div>
+            </section>
+
+        </section>
+        <!-- Fin Seccion Garantia, Servicios, Productos  -->
+
+
+        <!-- Proyectos -->
+
+        <section class="row sectionTres text-white fw-bold fs-1 mt-4 mb-4 pt-3">
+            <p class="col-12">PROYECTOS</p>
+        </section>
+
 
         <div class="imgProyectos">
             <img src="./assets/img/1436167d-cf68-4bf2-aa5b-d975269e1779.jpeg" class="img1" alt="Aire">
@@ -137,60 +147,107 @@
 
         <!-- Tabla de precios -->
 
-        <h3 class="col-12 d-flex justify-content-center align-items-center">PRECIOS</h3>
-        
-        <div class="containerPrecios row d-flex justify-content-center align-items-center">
-            
-            <div class="cardPrecios col-4">
-                <div class="texto">
-                    <h4 class="tituloCard">
-                        Mantenimiento
-                    </h4>
-                    <p>Desde <span>50.000</span></p>
-                    <p>- Mantenimiento de miniSplit
-                       - Equipos industriales
-                       - Condensadoras industriales
-                       - Equipos para oficinas
-                    </p>
-                    <button>
-                        COTIZAR
-                    </button>
-                </div>
+        <h3 class="col-12 d-flex justify-content-center align-items- fw-bold fs-1 mt-5 mb-3">PRECIOS</h3>
+
+        <div class="containerPrecios row d-flex justify-content-center align-items-cente mb-5">
+
+            <div class="cardPrecios col-sm-12 col-md-6 col-lg-4 col-xl-4 w-30">
+
+                <h4 class="tituloCard mt-4 fw-bold">
+                    Mantenimiento
+                </h4>
+                <p>Desde <span class="fs-1 text-primary fw-bold">50.000</span></p>
+                <p>- Mantenimiento de miniSplit
+                    - Equipos industriales
+                    - Condensadoras industriales
+                    - Equipos para oficinas
+                </p>
+                <button class="mb-4">
+                    COTIZAR
+                </button>
+
             </div>
-    
-            <div class="cardPrecios col-4">
-                <div class="texto">
-                    <h4 class="tituloCard">
-                        Venta
-                    </h4>
-                    <p>Desde <span>50.000</span></p>
-                    <p>Manejamos todo tipo de Aires Acondicionados, desde equipos para el hogar hasta equipos para grandes empresas.
-                    </p>
-                    <button>
-                        COTIZAR
-                    </button>
-                </div>
+
+            <div class="cardPrecios col-sm-12 col-md-6 col-lg-4 col-xl-4">
+
+                <h4 class="tituloCard mt-4 fw-bold">
+                    Venta
+                </h4>
+                <p>Desde <span class="fs-1 text-primary fw-bold">200.000</span></p>
+                <p>Manejamos todo tipo de Aires Acondicionados, desde equipos para el hogar hasta equipos para
+                    grandes empresas.
+                </p>
+                <button class="mb-4">
+                    COTIZAR
+                </button>
+
             </div>
-    
-            <div class="cardPrecios col-4">
-                <div class="texto">
-                    <h4 class="tituloCard">
-                        Instalación
-                    </h4>
-                    <p>Desde <span>50.000</span></p>
-                    <p>Instalaciones rapidas y efectivas con calidad garantizada</p>
-                    <button>
-                        COTIZAR
-                    </button>
-                </div>
+
+            <div class="cardPrecios col-sm-12 col-md-6 col-lg-4 col-xl-4">
+
+                <h4 class="tituloCard mt-4 fw-bold">
+                    Instalación
+                </h4>
+                <p>Desde <span class="fs-1 text-primary fw-bold">400.000</span></p>
+                <p>Instalaciones rapidas y efectivas con calidad garantizada</p>
+                <button class="mb-4">
+                    COTIZAR
+                </button>
+
             </div>
 
         </div>
 
-        <!-- Hasta aqui lo tengo, lo empece a hacer de nuevo implementando las nuevas cosas que vimos pero no me dio el tiempo de terminarlo, lo entrego incompleto para poder tener unos dias mas y terminarlo :c -->
+    </main>
 
-    <footer class="container-fluid bg-secondary text-white">
-            FOOTER
+
+    <!-- Fin Tabla de precios -->
+
+
+    <footer class="container-fluid bg-dark text-white">
+        <div class="row d-flex justify-content-center align-items-center divFooter">
+            <ul class="col-sm-12 col-md-4 primerColFooter">
+                <div class="redes">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+
+                    <a
+                        href="https://api.whatsapp.com/send/?phone=573208554454&text=Hola%2C+quiero+m%C3%A1s+informaci%C3%B3n+sobre+sus+productos+o+servicios&type=phone_number&app_absent=0"><i
+                            class="fa-brands fa-whatsapp"></i></a>
+
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <li class="">
+                    Email: nilsonlenisaires@ventas.com.co
+                </li>
+                <li>
+                    Copyright - 2023 Todos los derechos reservados
+                </li>
+                <li>
+                    Diseñado por Dayan Lenis
+                </li>
+            </ul>
+
+            <div class="col-sm-12 col-md-4 w-30 logoFooter mb-3">
+                <a href="index.html"><img src="./assets/img/logoRound.png" alt="Logo" width="50%"></a>
+            </div>
+
+            <div class="col-sm-12 col-md-4 divParrafoFooter">
+                <p class="parrafoFooter">
+                    Cra 85 # 58-30 Ofic 302
+                </p>
+                <p class="parrafoFooter">
+                    Cali, Valle
+                </p>
+                <p class="parrafoFooter">
+                    Cel: +57 315 553 7684
+                </p>
+                <p class="parrafoFooter">
+                    Tel: 602 437 0304
+                </p>
+
+            </div>
+        </div>
+
     </footer>
 
     <script src="./js/bootstrap.bundle.min.js"></script>
