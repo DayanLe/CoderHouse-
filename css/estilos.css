@@ -90,6 +90,10 @@ header{
 
 }
 
+.tercerSection li{
+    list-style: none;
+}
+
 .divImagen img{
     aspect-ratio: 1 / 1;
 }
@@ -243,6 +247,7 @@ footer .contenedorFooter li{
     text-align: center;
 
 }
+
 
 
 
