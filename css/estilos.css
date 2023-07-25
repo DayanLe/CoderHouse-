@@ -83,26 +83,21 @@ header{
 
 /* Seccion Garantia, Servicios, Productos */
 
-.segundoSection{
-    background-color: #000000;
-    color: white;
-}
 
-.heading{
+.segundoSection, .tercerSection, .cuartoSection{
+    background-color: #000;
     text-align: center;
+
 }
 
-.segundoSection p {
-    font-size: 1rem;
+.divImagen img{
+    aspect-ratio: 1 / 1;
 }
 
-.segundoSection img{
-    flex-direction: column;
-}
 
 /* Seccion Proyectos */
 
-.sectionTres{
+.sectionCinco{
     background-color: #000000;
     text-align: center;
 }
@@ -110,23 +105,12 @@ header{
 /* carrusel */
 
 
-
-.sectionProyectos{
-    width: 100%;
-    background-color: #000;
-    font-size: 5rem;
-}
-
 .imgProyectos{
     width: 90%;
     margin: 10px auto;
     height: 50vh;
     background: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border: 0.5px solid black;
-    margin-bottom: 30px;
 }
 
 .imgProyectos img{
@@ -246,9 +230,27 @@ footer .contenedorFooter li{
     color: white;
 }
 
+/* Pagina marcas */
+
+
+.h1Marcas, .pMarcas{
+    text-align: center;
+}
+
+/* pagina servicios */
+
+.SectionServicios{
+    text-align: center;
+
+}
+
 
 
 
 
    
- 
+ @media screen and (min-width: 992px) {
+    .cardPrecios{
+        width: 30%;
+    }
+ }
