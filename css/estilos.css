@@ -90,6 +90,10 @@ header{
 
 }
 
+.lead{
+    font-size: 1rem;
+}
+
 .tercerSection li{
     list-style: none;
 }
@@ -248,10 +252,20 @@ footer .contenedorFooter li{
 
 }
 
+.SectionServicios .lead{
+    padding: 20px;
+}
 
 
 
 
+
+@media screen and (max-width: 767px) {
+    .cardPrecios {
+        width: 90%;
+        margin: 10px;
+    }
+  }
 
    
  @media screen and (min-width: 992px) {
@@ -259,3 +273,4 @@ footer .contenedorFooter li{
         width: 30%;
     }
  }
+
